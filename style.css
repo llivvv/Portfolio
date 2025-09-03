@@ -177,6 +177,11 @@ section {
 }
 
 @media (max-width: 480px) {
+  nav > p {
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
   .nav-item > a {
     font-size: 1.25rem;
   }
@@ -209,8 +214,8 @@ section {
     width: 2rem;
     aspect-ratio: 1;
     border: 0;
-    top: 1rem;
-    right: 1rem;
+    top: 1.25rem;
+    right: 1.25rem;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -219,6 +224,10 @@ section {
 
   #home {
     padding: 0 1.25rem;
+  }
+
+  .avatar {
+    width: 50%;
   }
 
   .intro {
