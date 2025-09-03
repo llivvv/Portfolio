@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  --prim-white: #faf9f6;
+  --prim-black: #222222;
+  --accent-blue: #1d86c3;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Inter", sans-serif;
+}

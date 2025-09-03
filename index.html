@@ -24,9 +24,57 @@
       href="style.css"
     />
     <title>Livia's Portfolio</title>
+    <script
+      src="nav.js"
+      defer
+    ></script>
   </head>
   <body>
-    <p>i hope this worked</p>
-    <h1>plz!!</h1>
+    <nav>
+      <p>livia lin<span>.</span></p>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      ></button>
+
+      <div class="items">
+        <ul
+          id="nav-list"
+          class="nav-list"
+          data-visible="false"
+        >
+          <li class="active nav-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#info">Info</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home">
+      <h1>Home</h1>
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <a href="./projects/ubc-course-planner.html"
+        >ubc course planner project!!</a
+      >
+    </section>
+    <section id="info">
+      <h1>Info</h1>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+    </section>
   </body>
 </html>
