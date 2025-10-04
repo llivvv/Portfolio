@@ -27,24 +27,81 @@
       rel="stylesheet"
       href="ubccp.css"
     />
+    <script
+      src="../nav.js"
+      defer
+    ></script>
     <title>UBC Course Planner</title>
   </head>
   <body>
     <nav>
-      <ul id="nav-list">
-        <li class="active nav-item">
-          <a href="../index.html#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="../index.html#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="../index.html#info">Info</a>
-        </li>
-        <li class="nav-item">
-          <a href="../index.html#contact">Contact</a>
-        </li>
-      </ul>
+      <p>livia lin<span>.</span></p>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      ></button>
+
+      <div class="items">
+        <ul
+          id="nav-list"
+          class="nav-list"
+          data-visible="false"
+        >
+          <li class="active nav-item">
+            <a href="../index.html#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#info">info</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#contact">contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
+    <section id="intro">
+      <div class="thumbnail-container">
+        <img
+          class="thumbnail"
+          src="/assets/thumbnails/ubc_course_planner.webp"
+          alt="ubc course planner project thumbnail"
+        />
+      </div>
+      <div class="info">
+        <h1>UBC Course Planner</h1>
+        <p>
+          An online tool to help students more efficiently view and select
+          courses to take for their degree.
+        </p>
+      </div>
+    </section>
+
+    <section id="role">
+      <div class="role">
+        <h3>Role</h3>
+        <p>UI/UX Designer, Front-end Developer</p>
+      </div>
+      <div class="timeline">
+        <h3>timeline</h3>
+        <p>May 2025 - Present</p>
+      </div>
+      <div class="team">
+        <h3>Team</h3>
+        <p>
+          Product Manager, 1 Designer, 2 Front-end Developers, 3 Back-end
+          Developers
+        </p>
+      </div>
+      <div class="tools">
+        <h3>Tools/Skills</h3>
+        <p>Figma, React, UI Design, UX Research</p>
+      </div>
+    </section>
   </body>
 </html>

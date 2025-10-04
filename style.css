@@ -8,8 +8,8 @@
   font-size: 16px;
   --prim-white: #faf9f6;
   --prim-black: #222222;
-  --neutral-gray: #4d4d4d;
-  --accent-purple: #9786beff;
+  --neutral-gray: #6c6c6cff;
+  --accent-purple: #866eb3ff;
   --mobile-role-gap: 1.5rem;
   --thumb-ratio: 1.77;
 }
@@ -25,6 +25,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   line-height: 1.5;
+  background: var(--prim-white);
 }
 
 /* font styles */
@@ -170,26 +171,6 @@ nav a:visited {
   background-size: cover;
 }
 
-/* .details {
-  max-width: 66%;
-  display: flex;
-  gap: 3rem;
-}
-
-.type {
-  font-size: 0.75rem;
-  color: var(--neutral-gray);
-}
-
-.occupation {
-  flex: 2;
-}
-
-.interests,
-.contact-info {
-  flex: 1;
-} */
-
 /* end of home section */
 
 /* projects section */
@@ -208,7 +189,7 @@ nav a:visited {
   /* justify-content: space-between; */
   gap: 4rem;
   align-items: center;
-  /* color: yellow; */
+  /* background-color: yellow; */
 }
 
 #projects h2 {
@@ -251,7 +232,7 @@ nav a:visited {
 }
 
 #projects p {
-  color: var(--neutral-gray);
+  color: var(--prim-black);
 }
 
 .project-group {
@@ -271,6 +252,39 @@ nav a:visited {
 
 #contact {
   background: yellow;
+}
+
+#footer {
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#footer h3,
+#footer a {
+  color: var(--accent-purple);
+  /* text-decoration: underline;  */
+}
+
+#footer .opportunity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#footer .copyright {
+  font-size: 0.75rem;
+}
+
+#footer a:hover {
+  font-style: oblique;
 }
 
 @media (max-width: 768px) {
@@ -333,8 +347,13 @@ nav a:visited {
   }
 
   #home,
-  #projects {
+  #projects,
+  #footer {
     padding: 0 1.25rem;
+  }
+
+  #footer {
+    padding-top: 3rem;
   }
 
   .avatar {
